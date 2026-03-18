@@ -296,3 +296,16 @@ form hr {
     Exercice 4
    ==================
 */
+
+#main4 h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  margin-bottom: 1rem;
+}
