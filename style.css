@@ -11,7 +11,144 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+hr {
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: grey;
+  margin-top: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  background-color: aqua;
+  padding: 1rem;
+}
+
+.container hr {
+  height: 0.25rem;
+  background-color: grey;
+  margin-bottom: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 1.5rem;
+  max-width: 800px;
+}
+
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+}
+
+/* ==================
+    Homepage(index)
+   ==================
+*/
+
+#home-header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  color: blue;
+}
+
+/* ==================
+    Exercice 2 page
+   ==================
+*/
+
+#header2 {
+  justify-content: center;
+}
+
+#main2 {
+  align-items: center;
+}
+
+table {
+  width: 400px;
+  border: 2px solid grey;
+  padding: 0.5rem;
+}
+
+caption {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+thead,
+td {
+  text-align: center;
+}
+
+#main2 hr {
+  display: none;
+}
+
+#main2 section:nth-child(4) {
+  margin-top: 1rem;
+}
+
+#main2 section:nth-child(2) {
+  border-top: 2px solid grey;
+  padding-top: 0.5rem;
+}
+/* ==================
+
+   ==================
+*/
+
+/* ==================
+
+   ==================
+*/
