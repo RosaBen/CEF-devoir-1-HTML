@@ -13,25 +13,29 @@
       <header>
         <h1>Annexe 3: Exercice 3 - Formulaire de contact</h1>
       </header>
+      <hr>
       <main>
         <h2>Exercice 3: Formulaire de contact</h2>
         <form>
           <fieldset>
             <legend>Informations personnelles</legend>
-            <div>
+            <div id="titles">
               <label for="mlle">Mlle<input type="radio" name="mlle" id="mlle"></label>
               <label for="mme">Mme<input type="radio" name="mme" id="mme"></label>
               <label for="mr">M.<input type="radio" name="mr" id="mr"></label>
             </div>
-            <div><label for="firstname">Prénom <input type="text" placeholder="Votre prénom" id="firstname"
-                  name="firstname"></label></div>
-            <div><label for="lastname">Nom* <input type="text" placeholder="Votre nom" id="lastname"
-                  name="lastname"></label>
+            <div id="sender-infos">
+              <div><label for="firstname">Prénom <input type="text" placeholder="Votre prénom" id="firstname"
+                    name="firstname"></label></div>
+              <div><label for="lastname">Nom* <input type="text" placeholder="Votre nom" id="lastname"
+                    name="lastname"></label>
+              </div>
+              <div><label for="email">Email* <input type="email" placeholder="Votre adresse email" id="email"
+                    name="email"></label>
+              </div>
             </div>
-            <div><label for="email">Email* <input type="email" placeholder="Votre adresse email" id="email"
-                  name="email"></label></div>
           </fieldset>
-          <fieldset>
+          <fieldset id="msg-field">
             <legend>Votre message</legend>
             <div>
               <label for="receiver">Destinataire</label>

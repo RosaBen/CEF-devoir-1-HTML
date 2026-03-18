@@ -144,10 +144,95 @@ td {
   padding-top: 0.5rem;
 }
 /* ==================
-
+    Exercice 3
    ==================
 */
 
+fieldset {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  color: blue;
+  font-weight: bold;
+}
+
+#sender-infos {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#sender-infos label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+
+#msg-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#msg-field div:nth-child(2) {
+  display: flex;
+  width: 205px;
+  justify-content: space-between;
+}
+
+#msg-field div:nth-child(3) label {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#msg-field div:nth-child(4) label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+textarea {
+  border-radius: 1rem;
+}
+
+input {
+  border-radius: 0.2rem;
+  height: 1.8rem;
+}
+
+#msg-field div:nth-child(5) {
+  padding-bottom: 1rem;
+}
+
+#msg-field div:nth-child(5) label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 2.5rem;
+}
+
+#msg-field div:nth-child(5) label input[type="file"]::file-selector-button {
+  border: none;
+  background-color: grey;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+#msg-field div:nth-child(5) label input[type="file"] {
+  height: 2.5rem;
+  width: 300px;
+}
 /* ==================
 
    ==================
