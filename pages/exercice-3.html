@@ -58,22 +58,26 @@
                   id="attachment"></label>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset id="option-field">
             <legend>Options</legend>
             <label for="msg-copy"><input type="checkbox" name="msg-copy" id="msg-copy"> Recevoir une copie du
               message</label>
             <br>
             <label for="offers"><input type="checkbox" name="offers" id="offers"> Recevoir nos offres</label>
             <hr>
-            <p>Etre contacté par un conseiller</p> <label for="no-contact"><input type="radio" name="no-contact"
-                id="no-contact"> Non</label>
-            <label for="phone-only"><input type="radio" name="phone-only" id="phone-only"> Par téléphone</label>
-            <label for="email-only"><input type="radio" name="email-only" id="email-only"> Par email</label>
+            <p>Etre contacté par un conseiller</p>
+            <div>
+              <label for="no-contact"><input type="radio" name="no-contact" id="no-contact"> Non</label>
+              <label for="phone-only"><input type="radio" name="phone-only" id="phone-only"> Par téléphone</label>
+              <label for="email-only"><input type="radio" name="email-only" id="email-only"> Par email</label>
+            </div>
           </fieldset>
-          <small>*: champs obligatoires</small>
-          <div>
-            <button>Valider</button>
-            <button>Effacer</button>
+          <div id="form-footer">
+            <small>*: champs obligatoires</small>
+            <div id="form-btns">
+              <button>Valider</button>
+              <button>Effacer</button>
+            </div>
           </div>
           <hr>
         </form>
