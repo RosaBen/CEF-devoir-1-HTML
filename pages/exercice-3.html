@@ -20,18 +20,18 @@
           <fieldset>
             <legend>Informations personnelles</legend>
             <div id="titles">
-              <label for="mlle">Mlle<input type="radio" name="mlle" id="mlle"></label>
-              <label for="mme">Mme<input type="radio" name="mme" id="mme"></label>
-              <label for="mr">M.<input type="radio" name="mr" id="mr"></label>
+              <label for="mlle">Mlle<input type="radio" name="title" id="mlle" value="mlle" checked></label>
+              <label for="mme">Mme<input type="radio" name="title" id="mme" value="mme"></label>
+              <label for="mr">M.<input type="radio" name="title" id="mr" value="mr"></label>
             </div>
             <div id="sender-infos">
               <div><label for="firstname">Prénom <input type="text" placeholder="Votre prénom" id="firstname"
                     name="firstname"></label></div>
-              <div><label for="lastname">Nom* <input type="text" placeholder="Votre nom" id="lastname"
-                    name="lastname"></label>
+              <div><label for="lastname">Nom* <input type="text" placeholder="Votre nom" id="lastname" name="lastname"
+                    required></label>
               </div>
               <div><label for="email">Email* <input type="email" placeholder="Votre adresse email" id="email"
-                    name="email"></label>
+                    name="email" required></label>
               </div>
             </div>
           </fieldset>
@@ -47,11 +47,11 @@
             </div>
             <div>
               <label for="subject">Sujet* <input type="text" placeholder="L'objet de votre message" id="subject"
-                  name="subject"></label>
+                  name="subject" required></label>
             </div>
             <div>
-              <label for="message">Message* <textarea name="message" id="message" rows="10"
-                  cols="100"></textarea></label>
+              <label for="message">Message* <textarea name="message" id="message" rows="10" cols="100" required
+                  placeholder="  Saisissez votre message ici"></textarea></label>
             </div>
             <div>
               <label for="attachment">Ajouter une pièce jointe <input type="file" name="attachment"
@@ -60,31 +60,34 @@
           </fieldset>
           <fieldset id="option-field">
             <legend>Options</legend>
-            <label for="msg-copy"><input type="checkbox" name="msg-copy" id="msg-copy"> Recevoir une copie du
+            <label for="msg-copy"><input type="checkbox" name="copy-data" id="msg-copy" value="msg-copy"> Recevoir une
+              copie du
               message</label>
             <br>
-            <label for="offers"><input type="checkbox" name="offers" id="offers"> Recevoir nos offres</label>
+            <label for="offers"><input type="checkbox" name="copy-data" id="offers" value="offers"> Recevoir nos
+              offres</label>
             <hr>
             <p>Etre contacté par un conseiller</p>
             <div>
-              <label for="no-contact"><input type="radio" name="no-contact" id="no-contact"> Non</label>
-              <label for="phone-only"><input type="radio" name="phone-only" id="phone-only"> Par téléphone</label>
-              <label for="email-only"><input type="radio" name="email-only" id="email-only"> Par email</label>
+              <label for="no-contact"><input type="radio" name="contact" id="no-contact" value="no-contact"> Non</label>
+              <label for="phone-only"><input type="radio" name="contact" id="phone-only" value="phone-only"> Par
+                téléphone</label>
+              <label for="email-only"><input type="radio" name="contact" id="email-only" value="email-only" checked> Par
+                email</label>
             </div>
           </fieldset>
           <div id="form-footer">
             <small>*: champs obligatoires</small>
             <div id="form-btns">
-              <button>Valider</button>
-              <button>Effacer</button>
+              <button type="submit">Valider</button>
+              <button type="reset">Effacer</button>
             </div>
           </div>
-          <hr>
         </form>
       </main>
-
+      <hr>
       <footer>
-        <a href="../index.html">Retour à la page d'accueil</a>
+        <a href="../index.html" target="_blank">Retour à la page d'accueil</a>
       </footer>
     </div>
   </body>
